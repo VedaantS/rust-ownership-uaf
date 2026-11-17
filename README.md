@@ -71,5 +71,18 @@ Recent GCC (12+) catches both C examples with `-Wuse-after-free`. That's a warni
 See [`slides/`](slides/).
 
 ## Resources
+**Rust**
+Rust Book, Chapter 4 “Understanding Ownership”: https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html (section 4.1, “What Is Ownership?”, is at ch04-01-what-is-ownership.html, and 4.2, “References and Borrowing”, is at ch04-02-references-and-borrowing.html)
+E0382 (use of a moved value): https://doc.rust-lang.org/error_codes/E0382.html
+E0502 (can’t borrow as mutable because it’s already borrowed as immutable): https://doc.rust-lang.org/error_codes/E0502.html
 
-<!-- Add the sources you actually used. -->
+**The 70% figure**
+
+Microsoft: the MSRC blog post “A proactive approach to more secure code” from July 2019 is at https://msrc.microsoft.com/blog/2019/07/a-proactive-approach-to-more-secure-code. It credits the number to Matt Miller’s 2019 presentation at BlueHat IL, and its chart is captioned “~70% of the vulnerabilities Microsoft assigns a CVE each year continue to be memory safety issues”. The follow-up post “We need a safer systems programming language” repeats the number and works through examples: https://msrc.microsoft.com/blog/2019/07/we-need-a-safer-systems-programming-language 
+microsoft
+microsoft
+Chromium: the “Memory safety” page is at https://www.chromium.org/Home/chromium-security/memory-safety/. It says around 70% of their high severity security bugs are memory unsafety problems, and half of those are use-after-free bugs. That’s based on 912 high or critical severity security bugs since 2015, affecting the Stable channel. 
+
+
+Used AI to help create this readme.
+https://claude.ai/share/fac20b58-9a9a-49fc-8716-a8bbe3edafe3
